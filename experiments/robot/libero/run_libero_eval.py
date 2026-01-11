@@ -16,12 +16,15 @@ Usage:
         --wandb_project <PROJECT> \
         --wandb_entity <ENTITY>
 """
-
+import sys
+sys.path.insert(0, "/userhome/cs3/duanty/LIBERO")
+sys.path.insert(0, "/userhome/cs3/duanty/openvla")
 import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, Union
+import time
 
 import draccus
 import numpy as np
@@ -70,7 +73,7 @@ class GenerateConfig:
     #################################################################################################################
     task_suite_name: str = "libero_spatial"          # Task suite. Options: libero_spatial, libero_object, libero_goal, libero_10, libero_90
     num_steps_wait: int = 10                         # Number of steps to wait for objects to stabilize in sim
-    num_trials_per_task: int = 50                    # Number of rollouts per task
+    num_trials_per_task: int = 10                    # Number of rollouts per task
 
     #################################################################################################################
     # Utils
@@ -143,8 +146,13 @@ def eval_libero(cfg: GenerateConfig) -> None:
     # Get expected image dimensions
     resize_size = get_image_resize_size(cfg)
 
-    # Start evaluation
+    # Start evaluation - record start time
+    eval_start_time = time.time()
     total_episodes, total_successes = 0, 0
+
+    # Track per-task statistics
+    task_stats = []  # List of dicts with task info
+
     for task_id in tqdm.tqdm(range(num_tasks_in_suite)):
         # Get task
         task = task_suite.get_task(task_id)
@@ -155,11 +163,24 @@ def eval_libero(cfg: GenerateConfig) -> None:
         # Initialize LIBERO environment and task description
         env, task_description = get_libero_env(task, cfg.model_family, resolution=256)
 
-        # Start episodes
+        # Start episodes - track task timing
+        task_start_time = time.time()
         task_episodes, task_successes = 0, 0
+        episode_times = []  # Track time for each episode in this task
+
         for episode_idx in tqdm.tqdm(range(cfg.num_trials_per_task)):
-            print(f"\nTask: {task_description}")
-            log_file.write(f"\nTask: {task_description}\n")
+            # Episode start time
+            episode_start_time = time.time()
+
+            total_episodes += 1
+            task_episodes += 1
+
+            print(f"\nTotal Episode: {total_episodes}")
+            print(f"Task Episode: {task_episodes}")
+            print(f"Task: [{task_id + 1}] {task_description}")
+            log_file.write(f"\nTotal Episode: {total_episodes}\n")
+            log_file.write(f"Task Episode: {task_episodes}\n")
+            log_file.write(f"Task: [{task_id + 1}] {task_description}\n")
 
             # Reset environment
             env.reset()
@@ -181,8 +202,6 @@ def eval_libero(cfg: GenerateConfig) -> None:
             elif cfg.task_suite_name == "libero_90":
                 max_steps = 400  # longest training demo has 373 steps
 
-            print(f"Starting episode {task_episodes+1}...")
-            log_file.write(f"Starting episode {task_episodes+1}...\n")
             while t < max_steps + cfg.num_steps_wait:
                 try:
                     # IMPORTANT: Do nothing for the first few timesteps because the simulator drops objects
@@ -237,36 +256,98 @@ def eval_libero(cfg: GenerateConfig) -> None:
                     log_file.write(f"Caught exception: {e}\n")
                     break
 
-            task_episodes += 1
-            total_episodes += 1
+            # Episode end time
+            episode_end_time = time.time()
+            episode_time = episode_end_time - episode_start_time
+            episode_times.append(episode_time)
 
             # Save a replay video of the episode
-            save_rollout_video(
-                replay_images, total_episodes, success=done, task_description=task_description, log_file=log_file
-            )
+            # save_rollout_video(
+            #     replay_images, total_episodes, success=done, task_description=task_description, log_file=log_file
+            # )
 
-            # Log current results
+            # Log current episode results
+            print(f"Time(s): {episode_time:.2f}")
             print(f"Success: {done}")
-            print(f"# episodes completed so far: {total_episodes}")
-            print(f"# successes: {total_successes} ({total_successes / total_episodes * 100:.1f}%)")
+            print(f"Task Success Rate: {task_successes}/{task_episodes} ({task_successes / task_episodes * 100:.1f}%)")
+            print(f"Total Success Rate: {total_successes}/{total_episodes} ({total_successes / total_episodes * 100:.1f}%)")
+
+            log_file.write(f"Time(s): {episode_time:.2f}\n")
             log_file.write(f"Success: {done}\n")
-            log_file.write(f"# episodes completed so far: {total_episodes}\n")
-            log_file.write(f"# successes: {total_successes} ({total_successes / total_episodes * 100:.1f}%)\n")
+            log_file.write(f"Task Success Rate: {task_successes}/{task_episodes} ({task_successes / task_episodes * 100:.1f}%)\n")
+            log_file.write(f"Total Success Rate: {total_successes}/{total_episodes} ({total_successes / total_episodes * 100:.1f}%)\n")
             log_file.flush()
 
-        # Log final results
-        print(f"Current task success rate: {float(task_successes) / float(task_episodes)}")
-        print(f"Current total success rate: {float(total_successes) / float(total_episodes)}")
-        log_file.write(f"Current task success rate: {float(task_successes) / float(task_episodes)}\n")
-        log_file.write(f"Current total success rate: {float(total_successes) / float(total_episodes)}\n")
+        # Task completed - calculate stats
+        task_end_time = time.time()
+        task_total_time = task_end_time - task_start_time
+        task_avg_time = np.mean(episode_times)
+
+        # Store task statistics
+        task_stats.append({
+            'task_id': task_id + 1,
+            'task_description': task_description,
+            'successes': task_successes,
+            'episodes': task_episodes,
+            'success_rate': float(task_successes) / float(task_episodes),
+            'avg_time': task_avg_time,
+            'total_time': task_total_time,
+        })
+
+        # Log task completion
+        print(f"\n{'='*80}")
+        print(f"Task [{task_id + 1}] Completed: {task_description}")
+        print(f"Success Rate: {task_successes}/{task_episodes} ({task_successes / task_episodes * 100:.1f}%)")
+        print(f"Avg Time per Episode: {task_avg_time:.2f}s")
+        print(f"Total Task Time: {task_total_time:.2f}s")
+        print(f"{'='*80}\n")
+
+        log_file.write(f"\n{'='*80}\n")
+        log_file.write(f"Task [{task_id + 1}] Completed: {task_description}\n")
+        log_file.write(f"Success Rate: {task_successes}/{task_episodes} ({task_successes / task_episodes * 100:.1f}%)\n")
+        log_file.write(f"Avg Time per Episode: {task_avg_time:.2f}s\n")
+        log_file.write(f"Total Task Time: {task_total_time:.2f}s\n")
+        log_file.write(f"{'='*80}\n\n")
         log_file.flush()
+
         if cfg.use_wandb:
             wandb.log(
                 {
                     f"success_rate/{task_description}": float(task_successes) / float(task_episodes),
                     f"num_episodes/{task_description}": task_episodes,
+                    f"avg_time/{task_description}": task_avg_time,
                 }
             )
+
+    # Evaluation completed
+    eval_end_time = time.time()
+    total_eval_time = eval_end_time - eval_start_time
+
+    # Print and log summary
+    summary = []
+    summary.append("\n" + "="*80)
+    summary.append("EVALUATION SUMMARY")
+    summary.append("="*80)
+    summary.append(f"Running {total_episodes} episodes ({num_tasks_in_suite} tasks × {cfg.num_trials_per_task} episodes)")
+    summary.append("")
+
+    for stat in task_stats:
+        task_line = (f"[{stat['task_id']}] {stat['task_description']}: "
+                    f"{stat['successes']}/{stat['episodes']} "
+                    f"({stat['success_rate']*100:.1f}%) "
+                    f"Avg: {stat['avg_time']:.2f}s")
+        summary.append(task_line)
+
+    summary.append("")
+    summary.append(f"Total Success Rate: {total_successes}/{total_episodes} ({total_successes/total_episodes*100:.2f}%)")
+    summary.append(f"Total Time: {total_eval_time:.2f}s ({total_eval_time/60:.2f}min)")
+    summary.append(f"Avg Time per Episode: {total_eval_time/total_episodes:.2f}s")
+    summary.append("="*80)
+
+    # Print to console and write to log
+    summary_text = "\n".join(summary)
+    print(summary_text)
+    log_file.write(summary_text + "\n")
 
     # Save local log file
     log_file.close()
@@ -277,6 +358,8 @@ def eval_libero(cfg: GenerateConfig) -> None:
             {
                 "success_rate/total": float(total_successes) / float(total_episodes),
                 "num_episodes/total": total_episodes,
+                "total_time": total_eval_time,
+                "avg_time_per_episode": total_eval_time / total_episodes,
             }
         )
         wandb.save(local_log_filepath)

@@ -1,0 +1,902 @@
+Task suite: libero_spatial
+
+Total Episode: 1
+Task Episode: 1
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 17.30
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 1/1 (100.0%)
+
+Total Episode: 2
+Task Episode: 2
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 24.98
+Success: True
+Task Success Rate: 2/2 (100.0%)
+Total Success Rate: 2/2 (100.0%)
+
+Total Episode: 3
+Task Episode: 3
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 20.38
+Success: True
+Task Success Rate: 3/3 (100.0%)
+Total Success Rate: 3/3 (100.0%)
+
+Total Episode: 4
+Task Episode: 4
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 42.32
+Success: False
+Task Success Rate: 3/4 (75.0%)
+Total Success Rate: 3/4 (75.0%)
+
+Total Episode: 5
+Task Episode: 5
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 14.66
+Success: True
+Task Success Rate: 4/5 (80.0%)
+Total Success Rate: 4/5 (80.0%)
+
+Total Episode: 6
+Task Episode: 6
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 17.73
+Success: True
+Task Success Rate: 5/6 (83.3%)
+Total Success Rate: 5/6 (83.3%)
+
+Total Episode: 7
+Task Episode: 7
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 15.35
+Success: True
+Task Success Rate: 6/7 (85.7%)
+Total Success Rate: 6/7 (85.7%)
+
+Total Episode: 8
+Task Episode: 8
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 17.05
+Success: True
+Task Success Rate: 7/8 (87.5%)
+Total Success Rate: 7/8 (87.5%)
+
+Total Episode: 9
+Task Episode: 9
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 17.96
+Success: True
+Task Success Rate: 8/9 (88.9%)
+Total Success Rate: 8/9 (88.9%)
+
+Total Episode: 10
+Task Episode: 10
+Task: [1] pick up the black bowl between the plate and the ramekin and place it on the plate
+Time(s): 16.97
+Success: True
+Task Success Rate: 9/10 (90.0%)
+Total Success Rate: 9/10 (90.0%)
+
+================================================================================
+Task [1] Completed: pick up the black bowl between the plate and the ramekin and place it on the plate
+Success Rate: 9/10 (90.0%)
+Avg Time per Episode: 20.47s
+Total Task Time: 204.71s
+================================================================================
+
+
+Total Episode: 11
+Task Episode: 1
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 22.46
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 10/11 (90.9%)
+
+Total Episode: 12
+Task Episode: 2
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 18.53
+Success: True
+Task Success Rate: 2/2 (100.0%)
+Total Success Rate: 11/12 (91.7%)
+
+Total Episode: 13
+Task Episode: 3
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 27.75
+Success: True
+Task Success Rate: 3/3 (100.0%)
+Total Success Rate: 12/13 (92.3%)
+
+Total Episode: 14
+Task Episode: 4
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 23.00
+Success: True
+Task Success Rate: 4/4 (100.0%)
+Total Success Rate: 13/14 (92.9%)
+
+Total Episode: 15
+Task Episode: 5
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 21.76
+Success: True
+Task Success Rate: 5/5 (100.0%)
+Total Success Rate: 14/15 (93.3%)
+
+Total Episode: 16
+Task Episode: 6
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 21.86
+Success: True
+Task Success Rate: 6/6 (100.0%)
+Total Success Rate: 15/16 (93.8%)
+
+Total Episode: 17
+Task Episode: 7
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 21.80
+Success: True
+Task Success Rate: 7/7 (100.0%)
+Total Success Rate: 16/17 (94.1%)
+
+Total Episode: 18
+Task Episode: 8
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 20.94
+Success: True
+Task Success Rate: 8/8 (100.0%)
+Total Success Rate: 17/18 (94.4%)
+
+Total Episode: 19
+Task Episode: 9
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 20.89
+Success: True
+Task Success Rate: 9/9 (100.0%)
+Total Success Rate: 18/19 (94.7%)
+
+Total Episode: 20
+Task Episode: 10
+Task: [2] pick up the black bowl next to the ramekin and place it on the plate
+Time(s): 23.40
+Success: True
+Task Success Rate: 10/10 (100.0%)
+Total Success Rate: 19/20 (95.0%)
+
+================================================================================
+Task [2] Completed: pick up the black bowl next to the ramekin and place it on the plate
+Success Rate: 10/10 (100.0%)
+Avg Time per Episode: 22.24s
+Total Task Time: 222.41s
+================================================================================
+
+
+Total Episode: 21
+Task Episode: 1
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 36.73
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 20/21 (95.2%)
+
+Total Episode: 22
+Task Episode: 2
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 23.37
+Success: True
+Task Success Rate: 2/2 (100.0%)
+Total Success Rate: 21/22 (95.5%)
+
+Total Episode: 23
+Task Episode: 3
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 19.18
+Success: True
+Task Success Rate: 3/3 (100.0%)
+Total Success Rate: 22/23 (95.7%)
+
+Total Episode: 24
+Task Episode: 4
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 18.81
+Success: True
+Task Success Rate: 4/4 (100.0%)
+Total Success Rate: 23/24 (95.8%)
+
+Total Episode: 25
+Task Episode: 5
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 21.34
+Success: True
+Task Success Rate: 5/5 (100.0%)
+Total Success Rate: 24/25 (96.0%)
+
+Total Episode: 26
+Task Episode: 6
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 34.76
+Success: True
+Task Success Rate: 6/6 (100.0%)
+Total Success Rate: 25/26 (96.2%)
+
+Total Episode: 27
+Task Episode: 7
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 18.48
+Success: True
+Task Success Rate: 7/7 (100.0%)
+Total Success Rate: 26/27 (96.3%)
+
+Total Episode: 28
+Task Episode: 8
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 23.30
+Success: True
+Task Success Rate: 8/8 (100.0%)
+Total Success Rate: 27/28 (96.4%)
+
+Total Episode: 29
+Task Episode: 9
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 42.52
+Success: False
+Task Success Rate: 8/9 (88.9%)
+Total Success Rate: 27/29 (93.1%)
+
+Total Episode: 30
+Task Episode: 10
+Task: [3] pick up the black bowl from table center and place it on the plate
+Time(s): 21.66
+Success: True
+Task Success Rate: 9/10 (90.0%)
+Total Success Rate: 28/30 (93.3%)
+
+================================================================================
+Task [3] Completed: pick up the black bowl from table center and place it on the plate
+Success Rate: 9/10 (90.0%)
+Avg Time per Episode: 26.02s
+Total Task Time: 260.16s
+================================================================================
+
+
+Total Episode: 31
+Task Episode: 1
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 15.65
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 29/31 (93.5%)
+
+Total Episode: 32
+Task Episode: 2
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 20.56
+Success: True
+Task Success Rate: 2/2 (100.0%)
+Total Success Rate: 30/32 (93.8%)
+
+Total Episode: 33
+Task Episode: 3
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 42.40
+Success: False
+Task Success Rate: 2/3 (66.7%)
+Total Success Rate: 30/33 (90.9%)
+
+Total Episode: 34
+Task Episode: 4
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 18.03
+Success: True
+Task Success Rate: 3/4 (75.0%)
+Total Success Rate: 31/34 (91.2%)
+
+Total Episode: 35
+Task Episode: 5
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 17.02
+Success: True
+Task Success Rate: 4/5 (80.0%)
+Total Success Rate: 32/35 (91.4%)
+
+Total Episode: 36
+Task Episode: 6
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 16.61
+Success: True
+Task Success Rate: 5/6 (83.3%)
+Total Success Rate: 33/36 (91.7%)
+
+Total Episode: 37
+Task Episode: 7
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 17.99
+Success: True
+Task Success Rate: 6/7 (85.7%)
+Total Success Rate: 34/37 (91.9%)
+
+Total Episode: 38
+Task Episode: 8
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 18.19
+Success: True
+Task Success Rate: 7/8 (87.5%)
+Total Success Rate: 35/38 (92.1%)
+
+Total Episode: 39
+Task Episode: 9
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 16.56
+Success: True
+Task Success Rate: 8/9 (88.9%)
+Total Success Rate: 36/39 (92.3%)
+
+Total Episode: 40
+Task Episode: 10
+Task: [4] pick up the black bowl on the cookie box and place it on the plate
+Time(s): 17.82
+Success: True
+Task Success Rate: 9/10 (90.0%)
+Total Success Rate: 37/40 (92.5%)
+
+================================================================================
+Task [4] Completed: pick up the black bowl on the cookie box and place it on the plate
+Success Rate: 9/10 (90.0%)
+Avg Time per Episode: 20.08s
+Total Task Time: 200.83s
+================================================================================
+
+
+Total Episode: 41
+Task Episode: 1
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 26.24
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 38/41 (92.7%)
+
+Total Episode: 42
+Task Episode: 2
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 43.15
+Success: False
+Task Success Rate: 1/2 (50.0%)
+Total Success Rate: 38/42 (90.5%)
+
+Total Episode: 43
+Task Episode: 3
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 42.92
+Success: False
+Task Success Rate: 1/3 (33.3%)
+Total Success Rate: 38/43 (88.4%)
+
+Total Episode: 44
+Task Episode: 4
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 29.10
+Success: True
+Task Success Rate: 2/4 (50.0%)
+Total Success Rate: 39/44 (88.6%)
+
+Total Episode: 45
+Task Episode: 5
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 30.59
+Success: True
+Task Success Rate: 3/5 (60.0%)
+Total Success Rate: 40/45 (88.9%)
+
+Total Episode: 46
+Task Episode: 6
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 42.73
+Success: False
+Task Success Rate: 3/6 (50.0%)
+Total Success Rate: 40/46 (87.0%)
+
+Total Episode: 47
+Task Episode: 7
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 25.15
+Success: True
+Task Success Rate: 4/7 (57.1%)
+Total Success Rate: 41/47 (87.2%)
+
+Total Episode: 48
+Task Episode: 8
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 23.20
+Success: True
+Task Success Rate: 5/8 (62.5%)
+Total Success Rate: 42/48 (87.5%)
+
+Total Episode: 49
+Task Episode: 9
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 22.95
+Success: True
+Task Success Rate: 6/9 (66.7%)
+Total Success Rate: 43/49 (87.8%)
+
+Total Episode: 50
+Task Episode: 10
+Task: [5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Time(s): 26.16
+Success: True
+Task Success Rate: 7/10 (70.0%)
+Total Success Rate: 44/50 (88.0%)
+
+================================================================================
+Task [5] Completed: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+Success Rate: 7/10 (70.0%)
+Avg Time per Episode: 31.22s
+Total Task Time: 312.20s
+================================================================================
+
+
+Total Episode: 51
+Task Episode: 1
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 42.42
+Success: False
+Task Success Rate: 0/1 (0.0%)
+Total Success Rate: 44/51 (86.3%)
+
+Total Episode: 52
+Task Episode: 2
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 42.44
+Success: False
+Task Success Rate: 0/2 (0.0%)
+Total Success Rate: 44/52 (84.6%)
+
+Total Episode: 53
+Task Episode: 3
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 16.46
+Success: True
+Task Success Rate: 1/3 (33.3%)
+Total Success Rate: 45/53 (84.9%)
+
+Total Episode: 54
+Task Episode: 4
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 42.42
+Success: False
+Task Success Rate: 1/4 (25.0%)
+Total Success Rate: 45/54 (83.3%)
+
+Total Episode: 55
+Task Episode: 5
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 42.47
+Success: False
+Task Success Rate: 1/5 (20.0%)
+Total Success Rate: 45/55 (81.8%)
+
+Total Episode: 56
+Task Episode: 6
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 17.34
+Success: True
+Task Success Rate: 2/6 (33.3%)
+Total Success Rate: 46/56 (82.1%)
+
+Total Episode: 57
+Task Episode: 7
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 19.66
+Success: True
+Task Success Rate: 3/7 (42.9%)
+Total Success Rate: 47/57 (82.5%)
+
+Total Episode: 58
+Task Episode: 8
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 16.85
+Success: True
+Task Success Rate: 4/8 (50.0%)
+Total Success Rate: 48/58 (82.8%)
+
+Total Episode: 59
+Task Episode: 9
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 42.36
+Success: False
+Task Success Rate: 4/9 (44.4%)
+Total Success Rate: 48/59 (81.4%)
+
+Total Episode: 60
+Task Episode: 10
+Task: [6] pick up the black bowl on the ramekin and place it on the plate
+Time(s): 18.62
+Success: True
+Task Success Rate: 5/10 (50.0%)
+Total Success Rate: 49/60 (81.7%)
+
+================================================================================
+Task [6] Completed: pick up the black bowl on the ramekin and place it on the plate
+Success Rate: 5/10 (50.0%)
+Avg Time per Episode: 30.10s
+Total Task Time: 301.05s
+================================================================================
+
+
+Total Episode: 61
+Task Episode: 1
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 42.37
+Success: False
+Task Success Rate: 0/1 (0.0%)
+Total Success Rate: 49/61 (80.3%)
+
+Total Episode: 62
+Task Episode: 2
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 20.28
+Success: True
+Task Success Rate: 1/2 (50.0%)
+Total Success Rate: 50/62 (80.6%)
+
+Total Episode: 63
+Task Episode: 3
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 19.04
+Success: True
+Task Success Rate: 2/3 (66.7%)
+Total Success Rate: 51/63 (81.0%)
+
+Total Episode: 64
+Task Episode: 4
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 18.83
+Success: True
+Task Success Rate: 3/4 (75.0%)
+Total Success Rate: 52/64 (81.2%)
+
+Total Episode: 65
+Task Episode: 5
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 19.52
+Success: True
+Task Success Rate: 4/5 (80.0%)
+Total Success Rate: 53/65 (81.5%)
+
+Total Episode: 66
+Task Episode: 6
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 25.78
+Success: True
+Task Success Rate: 5/6 (83.3%)
+Total Success Rate: 54/66 (81.8%)
+
+Total Episode: 67
+Task Episode: 7
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 22.08
+Success: True
+Task Success Rate: 6/7 (85.7%)
+Total Success Rate: 55/67 (82.1%)
+
+Total Episode: 68
+Task Episode: 8
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 20.40
+Success: True
+Task Success Rate: 7/8 (87.5%)
+Total Success Rate: 56/68 (82.4%)
+
+Total Episode: 69
+Task Episode: 9
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 22.57
+Success: True
+Task Success Rate: 8/9 (88.9%)
+Total Success Rate: 57/69 (82.6%)
+
+Total Episode: 70
+Task Episode: 10
+Task: [7] pick up the black bowl next to the cookie box and place it on the plate
+Time(s): 21.27
+Success: True
+Task Success Rate: 9/10 (90.0%)
+Total Success Rate: 58/70 (82.9%)
+
+================================================================================
+Task [7] Completed: pick up the black bowl next to the cookie box and place it on the plate
+Success Rate: 9/10 (90.0%)
+Avg Time per Episode: 23.22s
+Total Task Time: 232.16s
+================================================================================
+
+
+Total Episode: 71
+Task Episode: 1
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 42.89
+Success: False
+Task Success Rate: 0/1 (0.0%)
+Total Success Rate: 58/71 (81.7%)
+
+Total Episode: 72
+Task Episode: 2
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 22.33
+Success: True
+Task Success Rate: 1/2 (50.0%)
+Total Success Rate: 59/72 (81.9%)
+
+Total Episode: 73
+Task Episode: 3
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 26.56
+Success: True
+Task Success Rate: 2/3 (66.7%)
+Total Success Rate: 60/73 (82.2%)
+
+Total Episode: 74
+Task Episode: 4
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 20.88
+Success: True
+Task Success Rate: 3/4 (75.0%)
+Total Success Rate: 61/74 (82.4%)
+
+Total Episode: 75
+Task Episode: 5
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 22.26
+Success: True
+Task Success Rate: 4/5 (80.0%)
+Total Success Rate: 62/75 (82.7%)
+
+Total Episode: 76
+Task Episode: 6
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 23.08
+Success: True
+Task Success Rate: 5/6 (83.3%)
+Total Success Rate: 63/76 (82.9%)
+
+Total Episode: 77
+Task Episode: 7
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 22.64
+Success: True
+Task Success Rate: 6/7 (85.7%)
+Total Success Rate: 64/77 (83.1%)
+
+Total Episode: 78
+Task Episode: 8
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 42.46
+Success: False
+Task Success Rate: 6/8 (75.0%)
+Total Success Rate: 64/78 (82.1%)
+
+Total Episode: 79
+Task Episode: 9
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 22.99
+Success: True
+Task Success Rate: 7/9 (77.8%)
+Total Success Rate: 65/79 (82.3%)
+
+Total Episode: 80
+Task Episode: 10
+Task: [8] pick up the black bowl on the stove and place it on the plate
+Time(s): 42.37
+Success: False
+Task Success Rate: 7/10 (70.0%)
+Total Success Rate: 65/80 (81.2%)
+
+================================================================================
+Task [8] Completed: pick up the black bowl on the stove and place it on the plate
+Success Rate: 7/10 (70.0%)
+Avg Time per Episode: 28.84s
+Total Task Time: 288.45s
+================================================================================
+
+
+Total Episode: 81
+Task Episode: 1
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 23.90
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 66/81 (81.5%)
+
+Total Episode: 82
+Task Episode: 2
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 17.97
+Success: True
+Task Success Rate: 2/2 (100.0%)
+Total Success Rate: 67/82 (81.7%)
+
+Total Episode: 83
+Task Episode: 3
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 42.14
+Success: False
+Task Success Rate: 2/3 (66.7%)
+Total Success Rate: 67/83 (80.7%)
+
+Total Episode: 84
+Task Episode: 4
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 42.61
+Success: False
+Task Success Rate: 2/4 (50.0%)
+Total Success Rate: 67/84 (79.8%)
+
+Total Episode: 85
+Task Episode: 5
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 42.21
+Success: False
+Task Success Rate: 2/5 (40.0%)
+Total Success Rate: 67/85 (78.8%)
+
+Total Episode: 86
+Task Episode: 6
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 18.29
+Success: True
+Task Success Rate: 3/6 (50.0%)
+Total Success Rate: 68/86 (79.1%)
+
+Total Episode: 87
+Task Episode: 7
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 16.89
+Success: True
+Task Success Rate: 4/7 (57.1%)
+Total Success Rate: 69/87 (79.3%)
+
+Total Episode: 88
+Task Episode: 8
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 42.50
+Success: False
+Task Success Rate: 4/8 (50.0%)
+Total Success Rate: 69/88 (78.4%)
+
+Total Episode: 89
+Task Episode: 9
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 24.26
+Success: True
+Task Success Rate: 5/9 (55.6%)
+Total Success Rate: 70/89 (78.7%)
+
+Total Episode: 90
+Task Episode: 10
+Task: [9] pick up the black bowl next to the plate and place it on the plate
+Time(s): 17.33
+Success: True
+Task Success Rate: 6/10 (60.0%)
+Total Success Rate: 71/90 (78.9%)
+
+================================================================================
+Task [9] Completed: pick up the black bowl next to the plate and place it on the plate
+Success Rate: 6/10 (60.0%)
+Avg Time per Episode: 28.81s
+Total Task Time: 288.11s
+================================================================================
+
+
+Total Episode: 91
+Task Episode: 1
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 22.99
+Success: True
+Task Success Rate: 1/1 (100.0%)
+Total Success Rate: 72/91 (79.1%)
+
+Total Episode: 92
+Task Episode: 2
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 42.43
+Success: False
+Task Success Rate: 1/2 (50.0%)
+Total Success Rate: 72/92 (78.3%)
+
+Total Episode: 93
+Task Episode: 3
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 25.58
+Success: True
+Task Success Rate: 2/3 (66.7%)
+Total Success Rate: 73/93 (78.5%)
+
+Total Episode: 94
+Task Episode: 4
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 24.60
+Success: True
+Task Success Rate: 3/4 (75.0%)
+Total Success Rate: 74/94 (78.7%)
+
+Total Episode: 95
+Task Episode: 5
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 24.62
+Success: True
+Task Success Rate: 4/5 (80.0%)
+Total Success Rate: 75/95 (78.9%)
+
+Total Episode: 96
+Task Episode: 6
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 42.36
+Success: False
+Task Success Rate: 4/6 (66.7%)
+Total Success Rate: 75/96 (78.1%)
+
+Total Episode: 97
+Task Episode: 7
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 23.22
+Success: True
+Task Success Rate: 5/7 (71.4%)
+Total Success Rate: 76/97 (78.4%)
+
+Total Episode: 98
+Task Episode: 8
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 42.43
+Success: False
+Task Success Rate: 5/8 (62.5%)
+Total Success Rate: 76/98 (77.6%)
+
+Total Episode: 99
+Task Episode: 9
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 24.76
+Success: True
+Task Success Rate: 6/9 (66.7%)
+Total Success Rate: 77/99 (77.8%)
+
+Total Episode: 100
+Task Episode: 10
+Task: [10] pick up the black bowl on the wooden cabinet and place it on the plate
+Time(s): 25.89
+Success: True
+Task Success Rate: 7/10 (70.0%)
+Total Success Rate: 78/100 (78.0%)
+
+================================================================================
+Task [10] Completed: pick up the black bowl on the wooden cabinet and place it on the plate
+Success Rate: 7/10 (70.0%)
+Avg Time per Episode: 29.89s
+Total Task Time: 298.87s
+================================================================================
+
+
+================================================================================
+EVALUATION SUMMARY
+================================================================================
+Running 100 episodes (10 tasks × 10 episodes)
+
+[1] pick up the black bowl between the plate and the ramekin and place it on the plate: 9/10 (90.0%) Avg: 20.47s
+[2] pick up the black bowl next to the ramekin and place it on the plate: 10/10 (100.0%) Avg: 22.24s
+[3] pick up the black bowl from table center and place it on the plate: 9/10 (90.0%) Avg: 26.02s
+[4] pick up the black bowl on the cookie box and place it on the plate: 9/10 (90.0%) Avg: 20.08s
+[5] pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate: 7/10 (70.0%) Avg: 31.22s
+[6] pick up the black bowl on the ramekin and place it on the plate: 5/10 (50.0%) Avg: 30.10s
+[7] pick up the black bowl next to the cookie box and place it on the plate: 9/10 (90.0%) Avg: 23.22s
+[8] pick up the black bowl on the stove and place it on the plate: 7/10 (70.0%) Avg: 28.84s
+[9] pick up the black bowl next to the plate and place it on the plate: 6/10 (60.0%) Avg: 28.81s
+[10] pick up the black bowl on the wooden cabinet and place it on the plate: 7/10 (70.0%) Avg: 29.89s
+
+Total Success Rate: 78/100 (78.00%)
+Total Time: 2617.52s (43.63min)
+Avg Time per Episode: 26.18s
+================================================================================
